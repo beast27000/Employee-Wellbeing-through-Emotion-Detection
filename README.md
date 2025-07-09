@@ -97,9 +97,11 @@ Employee-Wellbeing-Emotion-Detection/
 Ensure CUDA 12.6 and cuDNN are set up.
 
 2. **Setup PostgreSQL**:
-Create database:
-CREATE DATABASE emotion_detection;
-
+   
+  Create database:
+  ```bash
+  CREATE DATABASE emotion_detection;
+```
 -Run database_setup.sql to create tables.
 -Update DB_PARAMS in scripts with your credentials.
 
@@ -108,11 +110,14 @@ Get FER2013 from Kaggle.
 Place in data/train/ and data/test/.
 
 4.**Run Training**:
+  ```bash
 python train_models.py
+```
 
 5.**Run Frontend**:
+```bash
 python emotion_detection_app.py
-
+```
 
 
 
