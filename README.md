@@ -120,6 +120,7 @@ Ensure CUDA 12.6 and cuDNN are set up.
 -Update DB_PARAMS in scripts with your credentials.
 
 3.**Prepare Dataset**:
+
 Get FER2013 from Kaggle.
 Place in data/train/ and data/test/.
 
