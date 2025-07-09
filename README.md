@@ -1,4 +1,4 @@
-![WhatsApp Image 2025-07-09 at 20 27 51_2ec6d544](https://github.com/user-attachments/assets/6678fdf0-cb94-4725-9636-8c12d1a4fabd)# Employee Wellbeing through Emotion Detection (v1 Tkinter version)
+# Employee Wellbeing through Emotion Detection (v1 Tkinter version)
 
 ## Overview
 The **Real-Time Emotion Monitoring and Analytics Dashboard** is a tool designed to improve employee well-being by analyzing facial expressions in real-time using deep learning. It uses an NVIDIA RTX 4060 GPU with CUDA 12.6 for fast emotion detection and model training. Unlike surveys, it gives instant insights into workforce morale. It processes 2-minute webcam feeds, detects emotions accurately, and stores data in PostgreSQL with separate `session_date` and `time_stamp` fields. The Tkinter GUI provides an easy-to-use interface for employees and admins, while a FastAPI endpoint is ready for future expansions. Privacy is maintained with implied consent via GUI use (explicit consent is planned for later) and data deletion after processing.
