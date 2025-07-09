@@ -69,8 +69,9 @@ Employee-Wellbeing-Emotion-Detection/
 ├── README.md              # Docs
 ├── requirements.txt       # Dependencies
 └── .gitignore             # Ignored files
+```
 
-## Tech Stack
+### Tech Stack
 
 - **Programming Language**: Python 3.9+
 - **Deep Learning**:
