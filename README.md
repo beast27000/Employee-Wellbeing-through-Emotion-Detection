@@ -1,5 +1,8 @@
 # Employee Wellbeing through Emotion Detection (v1 Tkinter version)
 
+![WhatsApp Image 2025-07-09 at 20 18 00_7f54b435](https://github.com/user-attachments/assets/1883b461-33f0-4f58-8cce-34084cfbf144)
+
+
 ## Overview
 The **Real-Time Emotion Monitoring and Analytics Dashboard** is a tool designed to improve employee well-being by analyzing facial expressions in real-time using deep learning. It uses an NVIDIA RTX 4060 GPU with CUDA 12.6 for fast emotion detection and model training. Unlike surveys, it gives instant insights into workforce morale. It processes 2-minute webcam feeds, detects emotions accurately, and stores data in PostgreSQL with separate `session_date` and `time_stamp` fields. The Tkinter GUI provides an easy-to-use interface for employees and admins, while a FastAPI endpoint is ready for future expansions. Privacy is maintained with implied consent via GUI use (explicit consent is planned for later) and data deletion after processing.
 
@@ -66,3 +69,54 @@ Employee-Wellbeing-Emotion-Detection/
 ├── README.md              # Docs
 ├── requirements.txt       # Dependencies
 └── .gitignore             # Ignored files
+
+## Tech Stack
+
+- **Programming Language**: Python 3.9+
+- **Deep Learning**:
+  - **PyTorch**: With CUDA for GPU tasks on RTX 4060.
+  - **Torchvision**: Pretrained models and utilities.
+- **Computer Vision**: OpenCV for video and face detection with CUDA support.
+- **Frontend**:
+  - **Tkinter**: GUI for login, video, and analytics.
+  - **Matplotlib**: Charts for emotions and departments.
+- **Database**: PostgreSQL with `psycopg` for connectivity.
+- **API**: FastAPI with Uvicorn for future web use.
+- **Utilities**:
+  - Pillow: Image handling.
+  - Numpy: Numerical operations.
+  - Tqdm: Progress bars.
+  - CSV: Data export.
+
+## Setup
+
+1. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+Ensure CUDA 12.6 and cuDNN are set up.
+
+2. **Setup PostgreSQL**:
+Create database:
+CREATE DATABASE emotion_detection;
+
+-Run database_setup.sql to create tables.
+-Update DB_PARAMS in scripts with your credentials.
+
+3.**Prepare Dataset**:
+Get FER2013 from Kaggle.
+Place in data/train/ and data/test/.
+
+4.**Run Training**:
+python train_models.py
+
+5.**Run Frontend**:
+python emotion_detection_app.py
+
+
+
+
+
+
+
+
+
