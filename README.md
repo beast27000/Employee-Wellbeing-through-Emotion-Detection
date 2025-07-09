@@ -107,6 +107,7 @@ Employee-Wellbeing-Emotion-Detection/
 1.**Install Dependencies**:
    ```bash
    pip install -r requirements.txt
+```
 Ensure CUDA 12.6 and cuDNN are set up.
 
 2.**Setup PostgreSQL**:
